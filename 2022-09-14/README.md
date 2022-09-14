@@ -1,4 +1,5 @@
-### RDS Aurora fail over 테스트
+RDS Aurora fail over 테스트
+============================
 ```
 RDS를 클러스터로 운영시, fail over 등으로 writer가 reader로 교체되면
 기존 writer에 접속된 connection은 reader 속성으로 변경되어 insert/update/delete와 같은 쿼리가 실행되지 않음.
@@ -11,5 +12,5 @@ RDS를 클러스터로 운영시, fail over 등으로 writer가 reader로 교체
 ```
 
 ```
-인스턴스 재부팅 시간은 10초 내외이며, writer/reader 전환 역시 10초내외로 테스트 되었다.
+인스턴스 재부팅 시간은 10초 내외이며, writer/reader 전환 역시 10초 내외로 테스트 되었다.
 ```
